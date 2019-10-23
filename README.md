@@ -5,9 +5,9 @@
 ```
 .
 ├── README.md
-├── applications  # 見本のアプリケーション置き場
-├── others		  # その他
-└── presentations # 発表用資料置き場
+├── applications	# 見本のアプリケーション置き場
+├── others	# その他
+└── presentations	# 発表用資料置き場
 ```
 
 ## メモ
