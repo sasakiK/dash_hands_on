@@ -108,7 +108,7 @@ h6{
 
 # Dashとは
 
-## ![height:150px](/assets/images/dash-logo-300.png)
+## ![height:150px](./assets/images/dash-logo-300.png)
 
 - PythonのWebアプリケーションフレームワークの一つ
     - pythonだけで完結する(Rでもかけるらしい)
