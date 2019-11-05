@@ -16,10 +16,22 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import KFold
 
-# やること：モデルを選択するドロップダウンを作って、コールバックにより選択したモデルを学習させる
+# やること：モデルを選択するドロップダウンを作って、選択したモデルに応じて出力結果が変わるような動的なページを作る
 
 # デフォルトのスタイルをアレンジ
 common_style = {'font-family': 'Comic Sans MS', 'textAlign': 'center', 'margin': '0 auto'}
+# アップロード部分のスタイル
+upload_style={
+    'width': '60%',
+    'height': '60px',
+    'lineHeight': '60px',
+    'borderWidth': '1px',
+    'borderStyle': 'dashed',
+    'borderRadius': '5px',
+    'textAlign': 'center',
+    'margin': '0 auto'
+            }
+
 
 # アプリの実態(インスタンス)を定義
 app = dash.Dash(__name__)
@@ -44,16 +56,7 @@ app.layout = html.Div(
                 'Drag and Drop or ',
                 html.A('Select Files')
             ]),
-            style={
-                'width': '60%',
-                'height': '60px',
-                'lineHeight': '60px',
-                'borderWidth': '1px',
-                'borderStyle': 'dashed',
-                'borderRadius': '5px',
-                'textAlign': 'center',
-                'margin': '0 auto'
-            }
+            style=upload_style
         ),
         html.Br(),
 
