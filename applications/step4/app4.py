@@ -16,7 +16,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import KFold
 
-# やること：ファイルアップロード機能を加える
+# やること：ファイルをアップロードし、データフレームとして表示させる
 # https://dash.plot.ly/dash-core-components/upload
 
 # デフォルトのスタイルをアレンジ
